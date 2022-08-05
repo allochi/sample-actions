@@ -11,5 +11,5 @@ jobs:
         with:
           node-version: "18"
       - run: npm i
-      - run: |
-          ls ${{ github.workspace }}
+      - run: npm run build
+      - run: ls ${{ github.workspace }}
