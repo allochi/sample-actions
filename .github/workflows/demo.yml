@@ -58,7 +58,7 @@ jobs:
         with:
           host: ${{ secrets.EDGE_ADDRESS }}
           username: ${{ secrets.EDGE_USERNAME }}
-          password: ${{ secrets.EDGE_PASSWORD }}
+          key: ${{ secrets.EDGE_RSA }}
           port: ${{ secrets.EDGE_PORT }}
           script: |
             ls
