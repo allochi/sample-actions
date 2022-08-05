@@ -16,9 +16,9 @@ jobs:
     steps:
       - name: Checkout repository and node
         uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
       
       - name: Build the application with node
+        uses: actions/setup-node@v3
         with:
           node-version: "18"
       - run: |
