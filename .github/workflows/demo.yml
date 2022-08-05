@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       
-      - name: Build the application
+      - name: Build the application with node
         with:
           node-version: "18"
       - run: |
