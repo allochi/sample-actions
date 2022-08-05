@@ -21,7 +21,7 @@ jobs:
       - name: Build the application
         with:
           node-version: "18"
-        run: |
+      - run: |
           npm i
           npm run build
           # docker build . -t ghcr.io/everdreamsoft/sample:latest
