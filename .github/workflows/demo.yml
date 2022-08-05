@@ -60,4 +60,6 @@ jobs:
           username: ${{ secrets.EDGE_USERNAME }}
           password: ${{ secrets.EDGE_PASSWORD }}
           port: ${{ secrets.EDGE_PORT }}
-          script: whoami
+          script: |
+            ls
+            docker pull ghcr.io/everdreamsoft/sample:latest
