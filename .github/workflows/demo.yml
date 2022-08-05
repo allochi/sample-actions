@@ -61,4 +61,4 @@ jobs:
           key: ${{ secrets.EDGE_RSA }}
           port: ${{ secrets.EDGE_PORT }}
           script: |
-            ls
+            docker pull ghcr.io/everdreamsoft/sample:latest
