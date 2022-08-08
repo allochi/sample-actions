@@ -12,7 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <router-view></router-view>
 
-  <HelloWorld msg="This is a message from the admin" />
+  <HelloWorld msg="This is for all of the hours that is waisted hosting something online!" />
 </template>
 
 <style scoped>
