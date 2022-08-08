@@ -11,6 +11,8 @@ import HelloWorld from './components/HelloWorld.vue'
   <router-link to="/products/Details">Product Details</router-link>
 
   <router-view></router-view>
+
+  <HelloWorld msg="This is a message from the admin" />
 </template>
 
 <style scoped>
