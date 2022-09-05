@@ -54,9 +54,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: sample-1.0.0
-          # tags: ${{ steps.meta.outputs.tags }}
-          # labels: ${{ steps.meta.outputs.labels }}
+          # tags: sample-1.0.0
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
 
       # Deployment
       # - name: Remote ssh deployment
