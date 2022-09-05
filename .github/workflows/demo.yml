@@ -53,8 +53,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{IMAGE_NAME}}-1.0.0
-          labels: ${{IMAGE_NAME}}-1.0.0
+          tags: sample-1.0.0
+          labels: ${{ steps.meta.outputs.labels }}
           # tags: ${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
 
