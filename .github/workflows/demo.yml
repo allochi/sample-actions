@@ -8,7 +8,7 @@ on: [push]
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: really
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push-image:
@@ -53,8 +53,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: sample-1.0.0
-          labels: what
+          tags: ${{IMAGE_NAME}}-1.0.0
+          labels: ${{IMAGE_NAME}}-1.0.0
           # tags: ${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
 
