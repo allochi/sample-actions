@@ -29,7 +29,7 @@ jobs:
       - run: |
           npm i
           npm run build
-          # docker build . -t ghcr.io/everdreamsoft/sample:latest
+          # docker build . -t ghcr.io/allochi/sample:latest
 
       # Login ghcr
       - name: Log in to the Container registry
@@ -67,6 +67,6 @@ jobs:
       #     key: ${{ secrets.EDGE_RSA }}
       #     port: ${{ secrets.EDGE_PORT }}
       #     script: |
-      #       docker pull ghcr.io/everdreamsoft/sample:latest
+      #       docker pull ghcr.io/allochi/sample:latest
       #       docker rm -f sample
-      #       docker run -d --network=caddy --name=sample ghcr.io/everdreamsoft/sample:latest
+      #       docker run -d --network=caddy --name=sample ghcr.io/allochi/sample:latest
